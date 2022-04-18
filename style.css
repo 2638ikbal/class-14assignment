@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;}
+
+
+.container{
+    width: 1240px;
+    margin: auto;
+}
+/* Header Menu Section */
+.header-menu{
+    background-color: white;
+    padding: 7px 0;
+}
+.header-menu ul{
+    text-align: center;
+}
+.header-menu ul li{
+    display: inline-block;
+    margin-left: 2px;
+    padding: 10px 10px;
+    background-color: #48dbfb;
+
+}
+.header-menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color:black;
+    font-weight: bold;
+    
+}
+.header-menu ul li a:hover{
+    color: #48dbfb;
+    font-weight: bold;
+}
+.header-menu ul li a::before{
+    content: "";
+    width:0 ;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left:0;
+    background-color: black;
+    transition: 0.2s;
+}
+.header-menu ul li a:hover:before{
+    width: 100%;
+
+}
+.header-menu ul li:hover{
+    background-color: white;
+}
+/* Header Menu Section End */
+
+/* Banner Section */
+.banner-section{
+    background-color: #48dbfb;
+    padding: 100px 50px;
+    text-align: center;
+}
+.banner-section h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.banner-section h1 {
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+button {
+    border: none;
+    padding: 15px 10px 15px 16px;
+    border-radius: 8px;
+    background: white;
+    position: relative;
+    z-index:1;
+}
+button a {
+    color: #b1b1b1;
+    text-decoration: none;
+    font-size: 18px;
+    z-index: 1;
+}
+
+span i {
+    margin-right: 5px;
+    font-size: 19px !important;
+    z-index:1;
+}
+
+button::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    border-radius: 8px;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    width: 0;
+    height: 100%;
+    color: white;
+    z-index: -1;
+
+}
+button:hover::before{
+    width: 100%;
+}
+
+button a:hover{
+    color: white;
+}
+button i:hover{
+    color: white;
+}
+/* Banner Section End */
+
+/* Cursol SEction */
+.cursol-section {
+    background-color: rgb(247 247 247);
+    text-align: center;
+    padding-bottom: 200px;
+}
+.cursol-content-section{
+    padding: 80px 0 ;
+}
+
+.cursol-content-section h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.cursol-content-section p {
+    color: #505050;
+}
+
+.cursol-image-section{
+    margin: auto;
+}
+.image-top {
+    text-align: center;
+    margin-bottom: 48px;
+}
+.image-box{
+    width: 270px;
+    display: inline-block;
+    margin-right: 45px;
+    overflow: hidden;
+}
+
+.image-box.four{
+    margin-right: 0 !important;
+}
+img{
+    max-width: 100%;
+}
+.image-bottom{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.image-box.eight{
+    margin-right: 0 !important;
+}
+
+.one img{
+    transform: rotate(0);
+    transition: 0.5s;
+}
+.one img:hover{
+    transform: rotate(360deg);
+}
+.two img{
+    transform: rotate(0);
+    transition: 0.4s;
+}
+.two img:hover{
+    transform: rotate(40deg);
+}
+.three img{
+    transform: rotate(0);
+    transition: 0.4s;
+}
+.three img:hover{
+    transform: rotate(-40deg) scale(1.1);
+}
+.four img{
+    transform: rotate(0);
+    transition: 0.4s;
+}
+.four img:hover{
+    transform: rotate(-30deg) scale(1.1);
+}
+.five img{
+    transform: rotate(0);
+    transition: 0.4s;
+}
+.five img:hover{
+    transform: rotate(30deg) scale(1.1);
+}
+.six img{
+    transform: rotate(0);
+    transition: 0.4s;
+}
+.six img:hover{
+    transform: rotate(360deg) scale(1.2);
+}
+.seven img{
+    transform: rotate(0);
+    transition: 0.4s;
+}
+.seven img:hover{
+    transform: rotate(8deg) scale(1.1);
+}
+.eight img{
+    transform: rotate(0);
+    transition: 0.4s;
+}
+.eight img:hover{
+    transform: rotate(-8deg) scale(1.1);
+}
+/* Cursol SEction End */
+
+/* Video Section */
+.video-section{
+    background-color: rgb(247 247 247);
+    margin: auto;
+    text-align: center;
+}
+.video-content h2 {
+    font-size: 33px;
+    padding: 20px 0;
+}
+.video-content p {
+    line-height: 30px;
+    font-size: 18px;
+    color: #505050;
+}
+
+.video-button {
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 25px;
+}
+.step {
+    width: 100px;
+    background-color: black;
+    display: inline-block;
+    margin-right: 430px;
+    transform: rotate(-40deg);
+    transition: 0.3s;
+}
+.step:hover{
+    transform: rotate(0);
+    background-color: #48dbfb;
+}
+.step p:hover{
+    color: black;
+    font-weight: bold;
+}
+.second{
+    transform: none;
+}
+.second:hover{
+    transform: scale(1.1);
+}
+.second p:hover{
+    font-weight: bold;
+}
+
+.extra{
+    margin-right: 0 !important;
+    transform: rotate(40deg);
+}
+.extra p:hover{
+    font-weight: bold;
+}
+
+.step p {
+    padding: 17px 5px;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+/* Video Section End */
+
+/* Footer Section */
+.footer-section{
+    background-color:#2e2f31 ;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-section p{
+    color: white;
+    font-weight: bold;
+}
+/* Footer Section End */
